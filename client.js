@@ -8,7 +8,15 @@ const connect = function() {
     console.log('Connection succesful');
     conn.write('Name: TB');
   });
-  conn.on('data', (client) =>{
+  
+  conn.on('connect',(client)=>{
+    // conn.write('Move: up');
+    // conn.write('Move: down');
+    // conn.write('Move: left');
+    // conn.write('Move: right');
+  });
+  
+  conn.on('data', (message) =>{
     console.log('youre dead, idled');
 
   });
