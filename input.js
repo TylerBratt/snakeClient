@@ -29,6 +29,18 @@ const handleUserInput = function(input) {
   if (input === '\u0064') {
     connection.write('Move: right');
   }
+  if (input === '\u0069') {
+    connection.write('Say: beat it!');
+  }
+  if (input === '\u006A') {
+    connection.write('Say: MY APPLE!');
+  }
+  if (input === '\u006B') {
+    connection.write('Say: so long!');
+  }
+  if (input === '\u006C') {
+    connection.write('Say: eat my dust!');
+  }
 };
 
 module.exports = setupInput;
